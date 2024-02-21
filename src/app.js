@@ -21,13 +21,13 @@ window.onload = function() {
   ];
 
   let generatedExcuse =
-    who[Math.round(Math.random() * 3)] +
+    who[Math.floor(Math.random() * who.length)] +
     " " +
-    action[Math.round(Math.random() * 3)] +
+    action[Math.floor(Math.random() * action.length)] +
     " " +
-    what[Math.round(Math.random() * 2)] +
+    what[Math.floor(Math.random() * what.length)] +
     " " +
-    when[Math.round(Math.random() * 4)];
+    when[Math.floor(Math.random() * when.length)];
 
   document.getElementById("excuse").innerHTML = generatedExcuse;
 };
